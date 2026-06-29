@@ -341,6 +341,36 @@ p {
   color: #4d4021;
 }
 
+.buyer-shortlist {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 34px rgba(22, 33, 31, 0.08);
+}
+
+.buyer-shortlist h2 {
+  margin-top: 0;
+}
+
+.buyer-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.buyer-actions .button {
+  min-height: 54px;
+  padding: 0 14px;
+  text-align: center;
+  white-space: normal;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -469,6 +499,8 @@ p {
   .trust-strip-inner,
   .grid,
   .product-grid,
+  .buyer-shortlist,
+  .buyer-actions,
   .split {
     grid-template-columns: 1fr;
   }
