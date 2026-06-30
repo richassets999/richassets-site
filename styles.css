@@ -171,6 +171,10 @@ p {
   margin-top: 30px;
 }
 
+.tight-row {
+  margin-top: 18px;
+}
+
 .trust-strip {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -341,6 +345,61 @@ p {
   color: #4d4021;
 }
 
+.sales-hero {
+  width: min(1120px, calc(100% - 32px));
+  min-height: calc(100svh - 68px);
+  margin: 0 auto;
+  padding: 58px 0 66px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.sales-copy {
+  max-width: 680px;
+}
+
+.sales-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.sales-disclosure {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.compact-section {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.sales-band {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111a18;
+  color: #edf4f1;
+}
+
+.sales-band p {
+  margin-top: 12px;
+  color: #c4d0cc;
+}
+
+.sales-band .eyebrow {
+  color: #bfe6ce;
+}
+
 .buyer-shortlist {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -501,8 +560,19 @@ p {
   .product-grid,
   .buyer-shortlist,
   .buyer-actions,
+  .sales-hero,
+  .sales-band,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .sales-hero {
+    min-height: auto;
+    padding-top: 42px;
+  }
+
+  .sales-band .button {
+    width: 100%;
   }
 
   .section {
